@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 function limpiar() {
 	
-    var Table = document.getElementById("lista-perros");
+    var Table = document.getElementById("lista-gatos");
 	
     Table.innerHTML = "";
 	
