@@ -40,9 +40,9 @@ function generar_galeria_imagenes(
 
             img.onload = function() {
                                                
-                registroHTML = "<td class=\"text-center animal\" data-toggle=\"modal\" data-target=\"#myModal\">";
+                registroHTML = "<td class=\"text-center animal\" >";
                 registroHTML += "    <img id=\"imagen-"+element.id+"\" src=\""+element.url+"\" class=\"img-thumbnail\" style=\"width:200px;height:150px;\" /><br/>";                
-                registroHTML += "    <button class=\"btn btn-info\" onclick=\"javascript:btnAction('"+element.id+"');\"  >"
+                registroHTML += "    <button class=\"btn btn-info\"  data-toggle=\"modal\" data-target=\"#myModal\" onclick=\"javascript:btnAction('"+element.id+"');\"  >"
                 registroHTML += "       <span id=\"ajax-loader-img-"+element.id+"\" class=\"spinner-border spinner-border-sm\"></span>"
                 registroHTML += "       "+textoBoton
                 registroHTML += "    </button>"
