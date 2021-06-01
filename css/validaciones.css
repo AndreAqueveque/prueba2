@@ -1,0 +1,7 @@
+
+.error-campo-formulario {
+    border: 2px solid red;
+}
+.invalid {
+border: 2px solid #ff0000;
+}
