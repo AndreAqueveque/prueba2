@@ -49,7 +49,6 @@ function generar_galeria_imagenes(
                 registroHTML += "</td>"
 
                              
-               
               
 
                 var registro = $(registroHTML).hide();
@@ -74,7 +73,6 @@ function generar_galeria_imagenes(
     registroHTML += "               <div class=\"modal-dialog\">"
     registroHTML +=  "                 <div class=\"modal-content\">"
     registroHTML +=   "                  <div class=\"modal-header\">"
-    registroHTML +=   "                   <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;  </button>"
     registroHTML +=    "                  <h4 class=\"modal-title\" id=\"myModalLabel\">INFORMACION DEL ADOPTANTE</h4>"
     registroHTML +=    "               </div>"
         registroHTML +=    "              <div class=\"modal-body\">"
