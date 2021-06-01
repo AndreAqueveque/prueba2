@@ -26,7 +26,7 @@ $(document).ready(function() {
     	
             else{
     	
-                generar_galeria_imagenes(selectorTablaHTML, nroTotalImagenes, nroColumnasPorFila, url,"Cambiar Imagen");
+                generar_galeria_imagenes(selectorTablaHTML, nroTotalImagenes, nroColumnasPorFila, url,"Detalles");
     	
                 generar_galeria_imagenes(selectorTablaHTML, nroTotalImagenes, nroColumnasPorFila, urlraza);
             }
@@ -59,12 +59,8 @@ $(document).ready(function() {
 });	
 	
 	
-    function getBtnActionURL() {
+    	
+    	
     
-    	
-        return "https://api.thedogapi.com/v1/images/search?limit=1";
-    	
-    	
-    }
 
     	
