@@ -76,7 +76,16 @@ function generar_galeria_imagenes(
     registroHTML +=    "                  <h4 class=\"modal-title\" id=\"myModalLabel\">INFORMACION DEL ADOPTANTE</h4>"
     registroHTML +=    "               </div>"
         registroHTML +=    "              <div class=\"modal-body\">"
-        registroHTML +=     "              RAZA: PURINA"
+        registroHTML +=     "              Raza: PURINA"
+        registroHTML +=  "<p> </p>"
+        registroHTML +=     "              Peso promedio en Kg: "
+        registroHTML +=  "<p> </p>"
+
+        registroHTML +=     "              Estatura promedio en Cms: "
+        registroHTML +=  "<p> </p>"
+
+        registroHTML +=     "              Nombre: Esponjita"
+       
         registroHTML +=     "            </div>"
         registroHTML +=      "           <div class=\"modal-footer\">"
         registroHTML +=       "            <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Cerrar</button>"
