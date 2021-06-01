@@ -22,15 +22,13 @@ $(document).ready(function() {
                 //$("#lista-perros").remove();
     
                 generar_galeria_imagenes(selectorTablaHTML, nroTotalImagenes, nroColumnasPorFila, urlraza + 2);
-    	
             }
     	
             else{
     	
-        generar_galeria_imagenes(selectorTablaHTML, nroTotalImagenes, nroColumnasPorFila, url,"Cambiar Imagen");
+                generar_galeria_imagenes(selectorTablaHTML, nroTotalImagenes, nroColumnasPorFila, url,"Cambiar Imagen");
     	
                 generar_galeria_imagenes(selectorTablaHTML, nroTotalImagenes, nroColumnasPorFila, urlraza);
-    	
             }
     	
         });
@@ -38,8 +36,7 @@ $(document).ready(function() {
     	
         
     	
-    });
-    	
+   
     
     	
     	
@@ -58,18 +55,16 @@ $(document).ready(function() {
     	
     }
     	
-    	
-    	
+	
+});	
+	
+	
     function getBtnActionURL() {
-    	
-    function getBtnActionURL() {
-    	
-        return "https://api.thedogapi.com/v1/images/search?limit=1";
-    	
-        return "https://api.thedogapi.com/v1/images/search?limit=1";
-    	
-    }
-    	
-    }
-         
     
+    	
+        return "https://api.thedogapi.com/v1/images/search?limit=1";
+    	
+    	
+    }
+
+    	

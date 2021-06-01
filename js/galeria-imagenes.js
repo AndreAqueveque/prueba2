@@ -40,13 +40,17 @@ function generar_galeria_imagenes(
 
             img.onload = function() {
                                                
-                registroHTML = "<td class=\"text-center\">";
+                registroHTML = "<td class=\"text-center animal\" data-toggle=\"modal\" data-target=\"#myModal\">";
                 registroHTML += "    <img id=\"imagen-"+element.id+"\" src=\""+element.url+"\" class=\"img-thumbnail\" style=\"width:200px;height:150px;\" /><br/>";                
                 registroHTML += "    <button class=\"btn btn-info\" onclick=\"javascript:btnAction('"+element.id+"');\"  >"
                 registroHTML += "       <span id=\"ajax-loader-img-"+element.id+"\" class=\"spinner-border spinner-border-sm\"></span>"
                 registroHTML += "       "+textoBoton
                 registroHTML += "    </button>"
-                registroHTML += "</td>";
+                registroHTML += "</td>"
+
+                             
+               
+              
 
                 var registro = $(registroHTML).hide();
 
@@ -66,11 +70,35 @@ function generar_galeria_imagenes(
         });
         
     });
+    registroHTML = "<div id=\"myModal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">"
+    registroHTML += "               <div class=\"modal-dialog\">"
+    registroHTML +=  "                 <div class=\"modal-content\">"
+    registroHTML +=   "                  <div class=\"modal-header\">"
+    registroHTML +=   "                   <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;  </button>"
+    registroHTML +=    "                  <h4 class=\"modal-title\" id=\"myModalLabel\">INFORMACION DEL ADOPTANTE</h4>"
+    registroHTML +=    "               </div>"
+        registroHTML +=    "              <div class=\"modal-body\">"
+        registroHTML +=     "              RAZA: PURINA"
+        registroHTML +=     "            </div>"
+        registroHTML +=      "           <div class=\"modal-footer\">"
+        registroHTML +=       "            <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>"
+        registroHTML +=       "           <button type=\"button\" class=\"btn btn-primary\">Save changes</button>"
+            registroHTML +=      "        </div>"
+            registroHTML +=       "     </div>"
+            registroHTML +=        "  </div>"
+            registroHTML +=       "</div>"
+
+            $(selectorTablaHTML).append(registroHTML);
+
+              
+
+
 }
 
 function btnAction(identificadorImagen) {
 
     console.log("mostrar spiner para reflejar la ejecución de la llamada ajax de fondo");
+    
     $("#ajax-loader-img-"+identificadorImagen).show();
 
     $.get(getBtnActionURL(), function(response){
